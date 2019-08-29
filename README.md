@@ -1,6 +1,9 @@
 # nnplot
 ### A Python library for pruning and visualizing Keras Neural Networks' structure and weights.
-![cover gif](https://github.com/Yuval-Ai/nnplot/blob/Documentation-File/Images/training_process.gif)
+
+_____________________________  ![cover gif](https://github.com/Yuval-Ai/nnplot/blob/Documentation-File/Images/training_process.gif) _____________________________
+
+
 ![cover image](https://github.com/Yuval-Ai/nnplot/blob/master/Images/banner.png)
 
 **nnplot** is a Python library for visualizing Neural Networks in an informative representation. 
