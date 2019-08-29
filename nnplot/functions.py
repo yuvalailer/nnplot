@@ -1,4 +1,4 @@
-"""
+indexes"""
 - Copyright (c) 2019 RAD Ltd.
 - Contact: Yuval.A (Rad R&D) yuval_a@rad.com
 -
@@ -218,9 +218,10 @@ def prune(model, max_limit=-1, verbose=True, input_list=None):
         model: A Keras model instance.
         max_limit: maximal number of nodes on each layer.
         verbose: print inforamtion along the way.
+        input_list: list of input names, so when the input_indexes output will have their names.
     # Outputs
         network: the new pruned network.
-        input_indexs: the indexes of the chosen inputs
+        input_indexes: the indexes of the chosen inputs
     """
 
     # If there is a max limit resize each model's layer to keep top k preforming nodes
@@ -268,8 +269,8 @@ def prune(model, max_limit=-1, verbose=True, input_list=None):
             network.layers[l].set_weights(weights_new)     #   Fill layer
 
         if input_list:
-            input_indexs = top_picks[:,0].T.tolist()[0]         # (list of) indexes of chosen inputs
-            input_list = [input_list[i] for i in input_indexs]  #
+            input_indexes = top_picks[:,0].T.tolist()[0]         # (list of) indexes of chosen inputs
+            input_list = [input_list[i] for i in input_indexes]  #
             if verbose:
                 print "\npicked inputs: %s" % input_list
         # else returns [network, None]
