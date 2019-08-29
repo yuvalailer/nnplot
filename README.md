@@ -8,13 +8,13 @@ It has the ability to display the NN's structure, dominance of links weights per
 
 It also provides functions for pruning the NN in order to display the **n** “most important” nodes of each layer.
 
-* [How to install it?](##How-to-install-it?) 
+* [How to install it?](#how-to-install-it) 
 
-* [How to use it?](##How-to-use-it?)
+* [How to use it?](#how-to-use-it)
 
-* [Start with an example](##Start-with-an-examlpe)
+* [Start with an example](#start-with-an-examlpe)
 
-* [Additional Information](##Additional-Information)
+* [Additional Information](#additional-information)
 
 
 
