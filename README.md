@@ -58,15 +58,15 @@ To make the most out of the functions mentioned above, try using their optional 
 ```python
 from nnplot.functions import plot_net
 
-plot_net(model, 
-         input_list=['1: Input A', '2: Input B', '3: Input C','etc..'],
+plot_net(model,
+         input_list    = ['1: Input A', '2: Input B', '3: Input C','etc..'],
          view=True,
-         filename="my_network.gv",
-         plot_title="My Neural Network Title",
-         out_title ="This is my output title: \n 1. output A \n 2. output B",
-         color_edges="rb",
-         print_weights=False,
-         size_limit=10)
+         filename      = "my_network.gv",
+         plot_title    = "My Neural Network Title",
+         out_title     = "This is my output title: \n 1. output A \n 2. output B",
+         color_edges   = "rb",
+         print_weights = False,
+         size_limit    = 10)
 ```
 
 Arguments:
@@ -98,8 +98,8 @@ from nnplot.functions import prune
 
 [new_network, new_input_list] = prune(model,
                                       max_limit,
-                                      input_list=['1: Input A', '2: Input B','etc..'],
-                                      verbose=True)
+                                      input_list = ['1: Input A', '2: Input B','etc..'],
+                                      verbose    = True)
 				
 ```
 
