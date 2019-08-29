@@ -23,7 +23,7 @@ It also provides functions for pruning the NN in order to display the **n** “m
 nnplot is available via pip:
 
 ```bash
-  pip install nnplot
+pip install nnplot
 ```
 /TODO - dependencies?
 
@@ -51,7 +51,7 @@ from nnplot.functions import prune
 
 
 
-To make the most out of the functions mentioned above, try using their optional flags (use examples follows):
+To make the most out of the functions mentioned above, try using their optional flags (examples follow):
 
 **plot:**
 
@@ -72,16 +72,23 @@ plot_net(model,
 Arguments:
 
 `model`: A Keras model instance.
-`view`: whether to plot the model on screen after its generation.
-`filename`: path and name to save the visualization outcome, as a *PDF* and a *.gv* (graph-viz) file.
-`title`: A title for the graph.
-`color_edges`: whether to visualize the weights of the edges as colors.
-	options:
 
-	- "*rb*" - Red / Black: red for positive edges and black for negative ones.
-	- "*mc*" - Multi Colored: all edges that converge into the same node, have the same (unique) color.
-	- "*none*" - all edges painted black (but thickness visualization remains).
+`view`: whether to plot the model on screen after its generation.
+
+`filename`: path and name to save the visualization outcome, as a *PDF* and a *.gv* (graph-viz) file.
+
+`title`: A title for the graph.
+
+`color_edges`: whether to visualize the weights of the edges as colors.
+
+options:
+
+-  "*rb*" - Red / Black: red for positive edges and black for negative ones.
+-  "*mc*" - Multi Colored: all edges that converge into the same node, have the same (unique) color.
+-  "*none*" - all edges painted black (but thickness visualization remains).
+
 `print_weights`: whether to print the weights of the edges to the screen.
+
 `size_limit`: max number of nodes in each layer (simply the first *n* nodes, use **prune** for a more complex node selection).
 
 **prune:**
@@ -97,13 +104,19 @@ from nnplot.functions import prune
 ```
 
 Arguments:
+
 `model`: A Keras model instance.
+
 `max_limit`: maximal number of nodes on each layer. ([How are the nodes picked in this prune?](\TODO))
+
 `input_list`: list of input names, so that the new *input_indexes* output will have their original names.
+
 `verbose`: print information of the process along the way.
 
 Outputs:
+
 `network`: the new pruned network.
+
 `input_indexs`: the indexes of the chosen inputs
 
 
