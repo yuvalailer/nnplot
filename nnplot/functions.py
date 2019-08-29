@@ -1,4 +1,4 @@
-indexes"""
+"""
 - Copyright (c) 2019 RAD Ltd.
 - Contact: Yuval.A (Rad R&D) yuval_a@rad.com
 -
