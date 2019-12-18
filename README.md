@@ -12,13 +12,29 @@ It has the ability to display the NN's structure, dominance of links weights per
 
 It also provides functions for pruning the NN in order to display the **n** “most important” nodes of each layer.
 
+### It's simple:
+Install: 
+```bash
+pip install nnplot graphviz
+```
+And in your code:
+```python
+from nnplot.functions import plot_net
+
+plot_net(trained_model)
+```
+#### and your network will be plotted! 
+
+
+
+### See more:
+
 * [How to install it?](#how-to-install-it) 
 
 * [How to use it?](#how-to-use-it)
 
-* [Start with an example](#start-with-an-examlpe)
+<!-- * [Start with an example](#start-with-an-examlpe) -->
 
-* [Additional Information](#additional-information)
 
 
 
@@ -27,9 +43,8 @@ It also provides functions for pruning the NN in order to display the **n** “m
 nnplot is available via pip:
 
 ```bash
-pip install nnplot
+pip install nnplot graphviz
 ```
-/TODO - dependencies?
 
 *alternatively, you can download the *nnplot*  subfolder and place it in the same directory of your code. 
 
@@ -42,7 +57,7 @@ once you have a built and trained Keras model, you can simply:
 ```python
 from nnplot.functions import plot_net
 
-plot_net(model)
+plot_net(trained_model)
 ```
 
 or **prune** the model:
@@ -124,51 +139,16 @@ Outputs:
 `input_indexs`: the indexes of the chosen inputs
 
 
-
-#### Examples:
-
-##### 1. plot <\TODO - with something>:
-
-```python
-\TODO code...
-```
-
-**result:** 
-
-\TODO - Image 
-
-##### 2. plot <\TODO - with something>:
-
-```python
-\TODO code...
-```
-
-**result:** 
-
-\TODO - Image 
-
-##### 3. plot <\TODO - with something>:
-
-```python
-\TODO code...
-```
-
-**result:** 
-
-\TODO - Image 
-
-##### 4. plot <\TODO - with something>:
-
-```python
-\TODO code...
-```
-
-**result:** 
-
-\TODO - Image 
-
-
-
-## Start with an example
-
-## Additional Information
+<!--
+<!-- #### Examples:
+<!-- 
+<!-- ##### 1. plot <\TODO - with something>:
+<!--
+<!-- ```python
+<!-- \TODO code...
+<!-- ```
+<!-- 
+<!-- **result:** 
+<!-- 
+<!-- \TODO - Image 
+<!--
