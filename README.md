@@ -1,5 +1,5 @@
 # nnplot
-### A Python library for pruning and visualizing Keras Neural Networks' structure and weights.
+### :tv: A Python library for pruning and visualizing Keras Neural Networks' structure and weights.
 
 _____________________________  ![cover gif](https://github.com/Yuval-Ai/nnplot/blob/Documentation-File/Images/training_process.gif) _____________________________
 
