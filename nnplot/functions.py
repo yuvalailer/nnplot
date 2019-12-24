@@ -402,7 +402,7 @@ def plot_net(model, input_list="No inputs titles specified",  view=True, filenam
                 n += 1
                 c.node(str(n), label="Image\n"+pxls[1]+" x"+pxls[2]+" pixels\n"+clrmap, fontcolor="white")
             else:
-                raise ValueError("ANN Visualizer: Layer not supported for visualizing")
+                raise ValueError("Visualizer: Layer not supported for visualizing")
 
         # Hidden Layers
         for i in range(0, hidden_layers_nr):
